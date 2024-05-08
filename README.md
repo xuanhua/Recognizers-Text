@@ -1,3 +1,11 @@
+# Extented Chinese date-time recognition for Python
+
+This project is based on Miscrosoft Recognizers Text. And we will list enhanced part or new features in this file. Please expected.
+
+
+Below is the original README content
+----
+
 # Microsoft Recognizers Text Overview
 
 ![Build Status](https://msrasia.visualstudio.com/_apis/public/build/definitions/310c848f-b260-4305-9255-b97bfb69974b/116/badge)
