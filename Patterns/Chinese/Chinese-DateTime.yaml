@@ -48,6 +48,9 @@ DateLastRegex: !nestedRegex
 DateNextRegex: !nestedRegex
   def: (下一个|下个|下一|下)(的)?{WeekDayRegex}
   references: [WeekDayRegex]
+DateDoubleNextRegex: !nestedRegex
+  def: (下下|下下个|下下一)(的)?{WeekDayRegex}
+  references: [WeekDayRegex]
 WeekWithWeekDayRangeRegex: !simpleRegex
   # TODO: modify below regex according to the counterpart in Japanese
   def: ^[.]

@@ -35,6 +35,7 @@ class ChineseDateTime:
     DateThisRegex = f'(这个|这一个|这|这一|本){WeekDayRegex}'
     DateLastRegex = f'(上一个|上个|上一|上|最后一个|最后)(的)?{WeekDayRegex}'
     DateNextRegex = f'(下一个|下个|下一|下)(的)?{WeekDayRegex}'
+    DateDoubleNextRegex = f'(下下|下下个|下下一)(的)?{WeekDayRegex}'
     WeekWithWeekDayRangeRegex = f'^[.]'
     WoMLastRegex = f'最后一'
     WoMPreviousRegex = f'上个'

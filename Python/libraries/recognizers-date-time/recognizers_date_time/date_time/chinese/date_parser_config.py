@@ -87,6 +87,11 @@ class ChineseDateParserConfiguration(DateParserConfiguration):
         return self._next_regex
 
     @property
+    def double_next_regex(self) -> Pattern:
+        # TODO: note that this property is only supported for Chinese
+        return self._double_next_regex
+
+    @property
     def unit_regex(self) -> any:
         return None
 
@@ -213,6 +218,8 @@ class ChineseDateParserConfiguration(DateParserConfiguration):
             ChineseDateTime.DateThisRegex)
         self._next_regex = RegExpUtility.get_safe_reg_exp(
             ChineseDateTime.DateNextRegex)
+        self._double_next_regex = RegExpUtility.get_safe_reg_exp(
+            ChineseDateTime.DateDoubleNextRegex)
         self._last_regex = RegExpUtility.get_safe_reg_exp(
             ChineseDateTime.DateLastRegex)
         self._unit_regex = RegExpUtility.get_safe_reg_exp(

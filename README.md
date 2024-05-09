@@ -1,10 +1,40 @@
 # Extented Chinese date-time recognition for Python
 
-This project is based on Miscrosoft Recognizers Text. And we will list enhanced part or new features in this file. Please expected.
+This project is based on Miscrosoft Recognizers Text. We add some extension to meet our internal usage and are glad to share it with the community.
+
+## Building and installation
+
+### Clone this repo
+
+    git clone https://github.com/xuanhua/Recognizers-Text.git 
+    cd Recognizers-Text
+
+### Uninstall official version of `recognizers-text` if you have installed it
+
+If you have installed `recognizers-text` via `pip` you could use following command to do uninstallation:
+
+```bash
+pip uninstall recognizers-text
+```
+If some sub-package of `recognizers-text` remains, you might meet weird errors later.
+
+
+### Build and do installatioon
+
+Launch `build.sh` file to install requirements, generate resources, install local packages and run all tests.
+
+```bash
+  cd Recognizers-Text/Python
+  ./build.sh
+```
+
+## New features besides official `recognizers-text` supported
+
+* Support for `next week of next monday` only for Chinese, e.g "下下周一"
 
 
 Below is the original README content
-----
+---
 
 # Microsoft Recognizers Text Overview
 

@@ -259,6 +259,7 @@ class ChineseDateExtractorConfiguration(DateExtractorConfiguration):
             RegExpUtility.get_safe_reg_exp(ChineseDateTime.DateThisRegex),
             RegExpUtility.get_safe_reg_exp(ChineseDateTime.DateLastRegex),
             RegExpUtility.get_safe_reg_exp(ChineseDateTime.DateNextRegex),
+            RegExpUtility.get_safe_reg_exp(ChineseDateTime.DateDoubleNextRegex),
             RegExpUtility.get_safe_reg_exp(ChineseDateTime.WeekDayRegex),
             RegExpUtility.get_safe_reg_exp(
                 ChineseDateTime.WeekDayOfMonthRegex),

@@ -491,6 +491,10 @@ class DateUtils:
         return DateUtils.this(from_date, day_of_week) + timedelta(weeks=1)
 
     @staticmethod
+    def double_next(from_date: datetime, day_of_week: DayOfWeek) -> datetime:
+        return DateUtils.this(from_date, day_of_week) + timedelta(weeks=2)
+
+    @staticmethod
     def last(from_date: datetime, day_of_week: DayOfWeek) -> datetime:
         return DateUtils.this(from_date, day_of_week) - timedelta(weeks=1)
 

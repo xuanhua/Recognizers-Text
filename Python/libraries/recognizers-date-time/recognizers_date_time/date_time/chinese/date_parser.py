@@ -226,6 +226,19 @@ class ChineseDateParser(BaseDateParser):
             result.success = True
             return result
 
+        # handle "week after the next Monday", or in Chinese we say: "下下周一"
+        match = regex.match(self.config.double_next_regex, trimmed_source)
+        if match and match.start() == 0 and len(match.group()) == len(trimmed_source):
+            weekday_str = RegExpUtility.get_group(match, 'weekday')
+            value = DateUtils.double_next(
+                reference, self.config.day_of_week.get(weekday_str))
+
+            result.timex = DateTimeFormatUtil.luis_date_from_datetime(value)
+            result.future_value = value
+            result.past_value = value
+            result.success = True
+            return result
+
         # handle "last Friday", "last mon"
         match = regex.match(self.config.last_regex, trimmed_source)
         if match and match.start() == 0 and len(match.group()) == len(trimmed_source):

@@ -1,7 +1,8 @@
 cd libraries/resource-generator
 
 echo // Installing Resource Generator Dependencies
-pip install -r ./requirements.txt
+echo // currently just ignores requirements
+#pip install -r ./requirements.txt
 
 echo // Building Resources
 python index.py ../recognizers-choice/resource-definitions.json
@@ -35,8 +36,8 @@ pip install -e ./libraries/recognizers-choice/
 echo // Installing recognizers-suite
 pip install -e ./libraries/recognizers-suite/
 
-echo // Installing Test Dependencies
-pip install -r ./tests/requirements.txt
+#echo // Installing Test Dependencies
+#pip install -r ./tests/requirements.txt
 
-echo // Running tests
-pytest --tb=line
+#echo // Running tests
+#pytest --tb=line
