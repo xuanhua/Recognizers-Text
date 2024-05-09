@@ -7,7 +7,7 @@ import recognizers_suite as Recognizers
 from recognizers_suite import Culture, ModelResult
 
 # Use English for the Recognizers culture
-DEFAULT_CULTURE = Culture.English
+DEFAULT_CULTURE = Culture.Chinese
 
 
 def main():
@@ -107,6 +107,7 @@ Here are some examples you could try:
  previous sale last friday\"
 \" It happened when the baby was only ten months old\"
 \" No, I don\'t think that we can make 100k USD today\"
+\" 帮我订一个下下周一的飞机\"
 ''')
 
 
